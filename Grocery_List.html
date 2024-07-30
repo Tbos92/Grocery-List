@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grocery List</title>
+    <link rel="stylesheet" href="Grocery_List.css">
+    <style>
+        body {background-color: rgb(113, 138, 141);}
+        h1   {color: rgb(243, 141, 234); text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>My Grocery List</h1>
+
+        <Section id="Pharmacy">
+            <h2><span>Pharmacy</span></h2>
+                <div style="width: 200px; float: inline-start;" id="Toiletries">
+                    <h3>Toiletries</h3>
+                    <ul>
+                        <li>Toothpaste</li>
+                        <li>Deodorant</li>
+                        <li>Shampoo</li>
+                    </ul>
+                </div>
+
+                <div style="width: 200px; float: inline-start;" id="Medical">
+                    <h3>Medical</h3>
+                    <ul>
+                        <li>Ibuprofen</li>
+                    </ul>
+                </div>
+
+                <img style="width: 150px; float: inline-start;" src="data:image/png;base64,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" alt="RX Logo">
+
+        </Section>
+        <div style="clear: both;"></div>
+        
+        <section id="Pantry">
+            <h2><span>Pantry Items</h2></span>
+                <div style="width: 200px; float: inline-start;" id="Canned">    
+                    <h3>Canned</h3>
+                    <ul>
+                        <li>Black Beans</li>
+                        <li>Peaches</li>
+                        <li>Condensed Milk</li>
+                    </ul>
+                </div>
+
+                <div style="width: 200px; float: inline-start;" id="Dry Goods">
+                    <h3>Dry Goods</h3>
+                    <ul>
+                        <li>Tortillas</li>
+                        <li>White Bread</li>
+                        <li>Applesauce</li>
+                        <li>Chocolate Chips</li>
+                        <li>Vegetable Oil</li>
+                    </ul>
+                </div>
+
+                <img style="width: 150px; float: inline-start;" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/1/17/0/FN_pantry_s4x3.jpg.rend.hgtvcom.406.305.suffix/1389969431643.jpeg" alt="Pantry items">
+
+        </section>
+        <div style="clear: both;"></div>
+
+        <Section id="Frozen">
+            <h2><h2><span>Frozen Items</h2></span></h2>
+                <div style="width: 200px; float: inline-start;" id="Vegetables/Fruit">
+                    <h3>Vegetables/Fruit</h3>
+                        <ul>
+                            <li>Green Peas</li>
+                            <li>Strawberry-Mango Smoothie Blend</li>
+                        </ul>
+                </div>
+
+                <div style="width: 200px; float: inline-start;" id="Proteins">
+                    <h3>Proteins</h3>
+                        <ul>
+                            <li>Morningstar Sausage Patties</li>
+                            <li>Quorn Chik'n Filets</li>
+                            <li>Boca Crumbles</li>
+                        </ul>
+                </div>
+
+                <img style="width: 150px; float: inline-start;" src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/stock%2FGettyImages-119453733" alt="Frozen Section">
+
+        </Section>
+        <div style="clear: both;"></div>
+
+        <Section id="Produce/Refrigerated">
+            <h2><span>Produce/Refrigerated</h2></span>
+                <div style="width: 200px; float: inline-start;" id="Fruit">
+                    <h3>Vegetables/Fruit</h3>
+                        <ul>
+                            <li>Raspberries</li>
+                            <li>Cosmic Crisp Apples</li>
+                            <li>Bananas</li>
+                            <li>Strawberries</li>
+                            <li>Baby Carrots</li>
+                            <li>Bell Peppers</li>
+                            <li>Jalapen Pepper</li>
+                        </ul>
+                </div>
+
+                <div style="width: 200px; float: inline-start;" id="Dairy/Misc">
+                    <h3>Dairy/Misc.</h3>
+                        <ul>
+                            <li>Shredded Cheese</li>
+                            <li>Babybel</li>
+                            <li>Unsalted Butter</li>
+                            <li>Eggs</li>
+                        </ul>
+                </div>
+
+                <img style="width: 150px; float: inline-start;" src="https://recipes.net/wp-content/uploads/2024/02/what-is-produce-in-a-grocery-store-1709193417.jpg" alt="Produce Section">
+
+        </Section>
+        <div style="clear: both;"></div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+section span {
+    margin-inline-start: 5%;
+    padding-inline: 1%;
+    background-color: chocolate;
+    outline: 2px solid
+}
+section h3 {
+    text-decoration: underline;
+    text-underline-position: auto;
+    padding-left: 5%;
+}
+div {
+    margin-inline-start: 5%;
+    background-color: beige;
+    height: fit-content;
+}
+img {
+    padding-left: 20px;
+}
